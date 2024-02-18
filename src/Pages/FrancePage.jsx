@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Components/Header/Header";
 import Slider from "../Components/Slider";
+import Branches from "../Components/Branches";
 
 const FrancePage = () => {
   return (
@@ -15,6 +16,7 @@ const FrancePage = () => {
         text2="Équipement de lavage d'avions"
         text3="Équipement de lavage d'avion"
       />
+      <Branches secTitle="Nos magasins" />
     </>
   );
 };

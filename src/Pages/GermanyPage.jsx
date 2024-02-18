@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Components/Header/Header";
 import Slider from "../Components/Slider";
+import Branches from "../Components/Branches";
 
 const GermanyPage = () => {
   return (
@@ -11,6 +12,7 @@ const GermanyPage = () => {
         text2="Flugzeugwaschanlagen"
         text3="Flugzeugwaschausrüstung"
       />
+      <Branches secTitle="Unsere Filialen" />
     </>
   );
 };

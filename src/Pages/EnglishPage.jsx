@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../Components/Header/Header";
 import Slider from "../Components/Slider";
+import Branches from "../Components/Branches";
+import Footer from "../Components/Footer";
 
 const EnglishPage = () => {
   return (
@@ -11,6 +13,8 @@ const EnglishPage = () => {
         text2="Aircraft Wash Equipment"
         text3="Airplane Wash Equipment"
       />
+      <Branches secTitle="Our Branches" />
+      <Footer />
     </>
   );
 };

@@ -1,3 +1,7 @@
+a {
+  text-decoration: none !important;
+}
+
 .logo {
   width: 5rem;
 }
@@ -44,4 +48,63 @@ h3 {
   height: 100%;
   content: "";
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body img {
+  margin: auto;
+  display: block;
+  border-radius: 4px;
+  width: 5.75rem;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.card-body a {
+  text-decoration: none;
+}
+
+.sec-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(255, 0, 0, 0.868);
+  width: fit-content;
+}
+
+/* contact section */
+#contact {
+  background-color: #161a30;
+  color: #fff;
+}
+
+#contact .sec-title {
+  border-bottom-color: #fff;
+}
+
+.contact-text p {
+  font-weight: 500;
+}
+
+.contact-text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.whats {
+  position: fixed;
+  left: 3%;
+  bottom: 5%;
 }
