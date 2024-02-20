@@ -6,20 +6,20 @@ import img4 from "../assets/imgs/airplane04.jpeg";
 import img5 from "../assets/imgs/airplane05.webp";
 import img6 from "../assets/imgs/airplane06.jpg";
 
-const Slider = ({text1, text2, text3}) => {
+const Slider = ({ text1, text2, text3 }) => {
   return (
-    <section id="home" class="h-100 pt-0">
+    <section id="home" className="h-100 pt-0">
       <div
         id="carouselExampleIndicators"
-        class="carousel slide"
+        className="carousel slide"
         data-bs-ride="carousel"
       >
-        <div class="carousel-indicators">
+        <div className="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="0"
-            class="active"
+            className="active"
             aria-current="true"
             aria-label="Slide 1"
           ></button>
@@ -60,32 +60,32 @@ const Slider = ({text1, text2, text3}) => {
             aria-label="Slide 7"
           ></button>
         </div>
-        <div class="carousel-inner">
-          <div class="home-text">
-            <h3 class="mb-3 fs-4">{text1}</h3>
-            <h2 class="fs-2 fw-bold">{text2}</h2>
-            <h3 class="mt-3 fs-4">{text3}</h3>
+        <div className="carousel-inner">
+          <div className="home-text">
+            <h3 className="mb-3 fs-4">{text1}</h3>
+            <h2 className="fs-2 fw-bold">{text2}</h2>
+            <h3 className="mt-3 fs-4">{text3}</h3>
           </div>
-          <div class="carousel-item active">
-            <img src={img1} class="w-100" alt="cars" />
+          <div className="carousel-item active">
+            <img src={img1} className="w-100" alt="cars" />
           </div>
-          <div class="carousel-item">
-            <img src={img2} class="w-100" alt="..." />
+          <div className="carousel-item">
+            <img src={img2} className="w-100" alt="..." />
           </div>
-          <div class="carousel-item">
-            <img src={img3} class="w-100" alt="home wash" />
+          <div className="carousel-item">
+            <img src={img3} className="w-100" alt="home wash" />
           </div>
-          <div class="carousel-item">
-            <img src={img4} class="w-100" alt="..." />
+          <div className="carousel-item">
+            <img src={img4} className="w-100" alt="..." />
           </div>
-          <div class="carousel-item">
-            <img src={img5} class="w-100" alt="..." />
+          <div className="carousel-item">
+            <img src={img5} className="w-100" alt="..." />
           </div>
-          <div class="carousel-item">
-            <img src={img6} class="w-100" alt="..." />
+          <div className="carousel-item">
+            <img src={img6} className="w-100" alt="..." />
           </div>
-          <div class="carousel-item">
-            <img src={img4} class="w-100" alt="..." />
+          <div className="carousel-item">
+            <img src={img4} className="w-100" alt="..." />
           </div>
         </div>
       </div>

@@ -13,8 +13,40 @@ const EnglishPage = () => {
         text2="Aircraft Wash Equipment"
         text3="Airplane Wash Equipment"
       />
-      <Branches secTitle="Our Branches" />
-      <Footer />
+      <Branches
+        secTitle="Our Branches"
+        countryNames={[
+          "Switzerland",
+          "Egypt",
+          "UAE",
+          "KSA",
+          "USA",
+          "Canada",
+          "Brazil",
+        ]}
+        address={[
+          "Tiba swiss GmBH Poststrasse17, 2504 Biel. Switzerland",
+          "Tiba swiss GmBH Egypt, Sharkia, Kafr Saqr, Al-Nasr neighborhood",
+          "Tiba swiss GmBH, Dubai business bay, park Line toweroffice 2108 Dubai.",
+          " Saudi Arabia, Riad City",
+        ]}
+        message="Comming soon"
+      />
+      <Footer
+        secTitle="Contact us"
+        title1="Get In Touch"
+        title2="Message Us"
+        description="Always keep in touch with us through e-mail or WhatsApp and we
+                will respond to you as soon as possible."
+        building="Name of Business"
+        buildingDesc="TIBA SWISS GMBH"
+        location="Location"
+        locationDesc="Poststrasse 17 2504 Biel/Bienne , Switzerland"
+        placeholder1="Name"
+        placeholder2="Subject"
+        placeholder3="Message"
+        submit="Send Message"
+      />
     </>
   );
 };

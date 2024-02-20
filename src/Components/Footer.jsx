@@ -1,43 +1,54 @@
 import React from "react";
 import qr from "../assets/imgs/qr.png";
 
-const Footer = () => {
+const Footer = ({
+  secTitle,
+  title1,
+  title2,
+  description,
+  building,
+  buildingDesc,
+  location,
+  locationDesc,
+  mail,
+  placeholder1,
+  placeholder2,
+  placeholder3,
+  submit
+}) => {
   return (
     <section id="contact" className="pt-4">
-      <h2 class="sec-title">Contact us</h2>
-      <div class="container">
-        <div class="row mt-3">
-          <div class="col-md-5">
-            <div class="pe-3">
-              <h3>Get In Touch</h3>
-              <p>
-                Always keep in touch with us through e-mail or WhatsApp and we
-                will respond to you as soon as possible.
-              </p>
-              <div class="d-flex align-items-center mb-3">
-                <div class="icon-holder ms-3 me-4">
-                  <i class="fa-solid fa-building fa-2x"></i>
+      <h2 className="sec-title">{secTitle}</h2>
+      <div className="container">
+        <div className="row mt-3">
+          <div className="col-md-5">
+            <div className="pe-3">
+              <h3>{title1}</h3>
+              <p>{description}</p>
+              <div className="d-flex align-items-center mb-3">
+                <div className="icon-holder ms-3 me-4">
+                  <i className="fa-solid fa-building fa-2x"></i>
                 </div>
-                <div class="contact-text">
-                  <h4 class="mb-1">Name of Business</h4>
-                  <p>TIBA SWISS GMBH</p>
+                <div className="contact-text">
+                  <h4 className="mb-1">{building}</h4>
+                  <p>{buildingDesc}</p>
                 </div>
               </div>
-              <div class="d-flex align-items-center mb-3">
-                <div class="icon-holder ms-3 me-4">
-                  <i class="fa-solid fa-location-dot fa-2x"></i>
+              <div className="d-flex align-items-center mb-3">
+                <div className="icon-holder ms-3 me-4">
+                  <i className="fa-solid fa-location-dot fa-2x"></i>
                 </div>
-                <div class="contact-text">
-                  <h4 class="mb-1">Location</h4>
-                  <p>Poststrasse 17 2504 Biel/Bienne , Switzerland</p>
+                <div className="contact-text">
+                  <h4 className="mb-1">{location}</h4>
+                  <p>{locationDesc}</p>
                 </div>
               </div>
-              <div class="d-flex align-items-center mb-3">
-                <div class="icon-holder ms-3 me-4">
-                  <i class="fa-solid fa-envelope fa-2x"></i>
+              <div className="d-flex align-items-center mb-3">
+                <div className="icon-holder ms-3 me-4">
+                  <i className="fa-solid fa-envelope fa-2x"></i>
                 </div>
-                <div class="contact-text">
-                  <h4 class="mb-1">E-mail</h4>
+                <div className="contact-text">
+                  <h4 className="mb-1">{mail ? mail : "E-mail"}</h4>
                   <p>
                     <a href="mailto:info@tibaswiss.ch">info@tibaswiss.ch</a>
                   </p>
@@ -45,56 +56,56 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div class="col-md-1">
-            <img src={qr} class="w-100 mt-5 pt-5" alt="qr" />
+          <div className="col-md-1">
+            <img src={qr} className="w-100 mt-5 pt-5" alt="qr" />
           </div>
-          <div class="col-md-6">
+          <div className="col-md-6">
             <form
               action="mailto:info@tibaswiss.ch"
               method="post"
               enctype="text/plain"
             >
-              <h3>Message Us</h3>
-              <div class="row">
-                <div class="col-md-6">
+              <h3>{title2}</h3>
+              <div className="row">
+                <div className="col-md-6">
                   <input
                     type="text"
-                    class="form-control mb-2"
+                    className="form-control mb-2"
                     name="name"
                     id="name"
-                    placeholder="Name"
+                    placeholder={placeholder1}
                     required
                   />
                 </div>
-                <div class="col-md-6">
+                <div className="col-md-6">
                   <input
                     type="email"
-                    class="form-control"
+                    className="form-control"
                     name="email"
                     id="email"
-                    placeholder="Email"
+                    placeholder={mail ? mail : "E-mail"}
                     required
                   />
                 </div>
               </div>
               <input
-                class="form-control mt-2"
+                className="form-control mt-2"
                 type="text"
                 name="subject"
                 id="subject"
-                placeholder="subject"
+                placeholder={placeholder2}
                 required
               />
               <textarea
-                class="form-control my-2"
+                className="form-control my-2"
                 name="message"
                 id="message"
                 cols="30"
                 rows="5"
-                placeholder="Message"
+                placeholder={placeholder3}
               ></textarea>
-              <button type="submit" class="btn btn-success">
-                Send Message
+              <button type="submit" className="btn btn-success">
+                {submit}
               </button>
             </form>
           </div>
@@ -104,9 +115,9 @@ const Footer = () => {
         href="https://wa.link/1e0co9"
         target="_blank"
         rel="noreferrer"
-        class="whats"
+        className="whats"
       >
-        <i class="fa-brands fa-whatsapp fa-3x text-success"></i>
+        <i className="fa-brands fa-whatsapp fa-3x text-success"></i>
       </a>
     </section>
   );

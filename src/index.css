@@ -108,3 +108,31 @@ textarea {
   left: 3%;
   bottom: 5%;
 }
+
+
+a:hover .fa-phone {
+  animation: ring 0.2s infinite;
+}
+
+a:hover .fa-location-dot {
+  animation: locate 0.5s infinite;
+}
+
+@keyframes locate {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+

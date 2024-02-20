@@ -7,11 +7,12 @@ const BranchItem = ({
   addressLink,
   phone1,
   phone2,
+  commingSoon,
 }) => {
   return (
-    <div class="col-md-4 col-sm-6">
-      <div class="card text-center shadow">
-        <div class="card-body">
+    <div className="col-md-4 col-sm-6">
+      <div className="card text-center shadow">
+        <div className="card-body">
           <img src={img} alt={countryName} />
           <h4>{countryName}</h4>
           <p>
@@ -22,28 +23,28 @@ const BranchItem = ({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fa-solid fa-location-dot"></i> {address}
+                <i className="fa-solid fa-location-dot"></i> {address}
               </a>
             ) : (
               <p className="fw-bold text-info">
-                <i class="fa-solid fa-location-dot"></i>
-                {address != null ? address : "comming soon"}
+                <i className="fa-solid fa-location-dot"></i>
+                {address != null ? address : ` ${commingSoon}`}
               </p>
             )}
           </p>
-          <p class="d-xl-flex justify-content-around">
+          <p className="d-xl-flex justify-content-around">
             {phone1 != null ? (
-              <a href={`tel:${phone1}`} class="d-block text-info">
-                <i class="fa-solid fa-phone"></i> {phone1}
+              <a href={`tel:${phone1}`} className="d-block text-info">
+                <i className="fa-solid fa-phone"></i> {phone1}
               </a>
             ) : (
               <p className="m-0 text-info">
-                <i class="fa-solid fa-phone"></i> Coming Soon
+                <i className="fa-solid fa-phone"></i> {commingSoon}
               </p>
             )}
             {phone2 && (
               <a href={`tel:${phone2}`} className="text-info">
-                <i class="fa-solid fa-phone"></i> {phone2}
+                <i className="fa-solid fa-phone"></i> {phone2}
               </a>
             )}
           </p>
