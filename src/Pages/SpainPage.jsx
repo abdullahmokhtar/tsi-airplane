@@ -4,6 +4,7 @@ import Slider from "../Components/Slider";
 import Branches from "../Components/Branches";
 import Footer from "../Components/Footer";
 import Benfits from "../Components/Benfits";
+import TechData from "../Components/TechData";
 
 const SpainPage = () => {
   return (
@@ -27,6 +28,22 @@ const SpainPage = () => {
           "Amistoso y mantener la prueba",
           "Fácil de usar, operar y mantener",
           "Proyecto de nueva idea",
+        ]}
+      />
+      <TechData
+        secTitle="Datos técnicos"
+        tableData={[
+          [
+            "No.",
+            "Descripciones de funciones",
+            "Detalles de la marca",
+            "Observaciones",
+          ],
+          [
+            "El equipo de limpieza de aviones utiliza principalmente cañones de agua de alta presión de larga distancia y sistemas de agua de alta presión de corta distancia",
+            "Bomba de agua de alta presión La parte del rotor de la bomba está soportada consistentemente por rodamientos en ambos extremos",
+            "Alemania pinfl",
+          ],
         ]}
       />
       <Branches

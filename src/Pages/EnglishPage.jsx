@@ -26,7 +26,17 @@ const EnglishPage = () => {
           "New Idea Project",
         ]}
       />
-      <TechData />
+      <TechData
+        secTitle="Technical Data"
+        tableData={[
+          ["No.", "Function Descriptions", "Brand Details", "Remarks"],
+          [
+            "The aircraft cleaning equipment mainly uses long-distance highpressure water cannons and shortdistance high-pressure water systems",
+            " High -pressure water pump The rotor part of the pump is supported consistently by Rolling bearing at both ends",
+            "Germany pinfl",
+          ],
+        ]}
+      />
       <Branches
         secTitle="Our Branches"
         countryNames={[

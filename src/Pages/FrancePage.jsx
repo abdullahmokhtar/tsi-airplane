@@ -4,6 +4,7 @@ import Slider from "../Components/Slider";
 import Branches from "../Components/Branches";
 import Footer from "../Components/Footer";
 import Benfits from "../Components/Benfits";
+import TechData from "../Components/TechData";
 
 const FrancePage = () => {
   return (
@@ -27,6 +28,22 @@ const FrancePage = () => {
           "Convivial et maintenir la preuve",
           "Facile à utiliser, à exploiter et à entretenir",
           "Nouveau projet d'idée",
+        ]}
+      />
+      <TechData
+        secTitle="Données techniques"
+        tableData={[
+          [
+            "Non.",
+            "Descriptions des fonctions",
+            "Détails de la marque",
+            "Remarques",
+          ],
+          [
+            "L'équipement de nettoyage des avions utilise principalement des canons à eau haute pression longue distance et des systèmes d'eau haute pression courte distance",
+            "Pompe à eau haute pression. La partie rotor de la pompe est soutenue de manière constante par des roulements aux deux extrémités",
+            "Allemagne pinfl",
+          ],
         ]}
       />
       <Branches

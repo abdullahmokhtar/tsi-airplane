@@ -4,6 +4,7 @@ import Slider from "../Components/Slider";
 import Branches from "../Components/Branches";
 import Footer from "../Components/Footer";
 import Benfits from "../Components/Benfits";
+import TechData from "../Components/TechData";
 
 const GermanyPage = () => {
   return (
@@ -14,15 +15,28 @@ const GermanyPage = () => {
         text2="Flugzeugwaschanlagen"
         text3="Flugzeugwaschausrüstung"
       />
-      <Benfits secTitle="Funktionen und Vorteile"
-         benfitsList={[
-           "Mehr Sauberkeit für das Flugzeug",
-           "Sparen Sie Zeit und Strom nur 30 Minuten",
-           "Flugzeug-Rostschutz",
-           "Freundlich sein und den Beweis wahren",
-           "Einfach zu bedienen, zu bedienen und zu warten",
-           "Neues Ideenprojekt",
-         ]} />
+      <Benfits
+        secTitle="Funktionen und Vorteile"
+        benfitsList={[
+          "Mehr Sauberkeit für das Flugzeug",
+          "Sparen Sie Zeit und Strom nur 30 Minuten",
+          "Flugzeug-Rostschutz",
+          "Freundlich sein und den Beweis wahren",
+          "Einfach zu bedienen, zu bedienen und zu warten",
+          "Neues Ideenprojekt",
+        ]}
+      />
+      <TechData
+        secTitle="Technische Daten"
+        tableData={[
+          ["Nr.", "Funktionsbeschreibungen", "Markendetails", "Bemerkungen"],
+          [
+            "Die Flugzeugreinigungsausrüstung verwendet hauptsächlich Langstrecken-Hochdruckwasserwerfer und Kurzstrecken-Hochdruckwassersysteme",
+            "Hochdruck-Wasserpumpe. Der Rotorteil der Pumpe wird an beiden Enden durchgehend durch Wälzlager getragen",
+            "Deutschland pinfl",
+          ],
+        ]}
+      />
       <Branches
         secTitle="Unsere Filialen"
         countryNames={[
