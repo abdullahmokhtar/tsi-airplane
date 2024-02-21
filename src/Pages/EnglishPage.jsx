@@ -28,12 +28,53 @@ const EnglishPage = () => {
       />
       <TechData
         secTitle="Technical Data"
+        tableHead={["No.", "Function Descriptions", "Brand Details", "Remarks"]}
         tableData={[
-          ["No.", "Function Descriptions", "Brand Details", "Remarks"],
           [
             "The aircraft cleaning equipment mainly uses long-distance highpressure water cannons and shortdistance high-pressure water systems",
             " High -pressure water pump The rotor part of the pump is supported consistently by Rolling bearing at both ends",
             "Germany pinfl",
+          ],
+          [
+            "To wash the entire surface of large and medium-sized aircraft (including fuselage, aircraft wings, and aircraft tail oil stains)",
+            "the pump runs smoothly",
+            "Japan NSK",
+          ],
+          [
+            "To remove oil stains and dust",
+            "This 5-outlets-pump is single stage Vertical pump,",
+          ],
+          [
+            "Red and ultraviolet detection function, automatic tracking and positioning, 24 hours automatic detection",
+            "The inlet of the pump is in the horizontal direction, and the outlet is arranged vertically upwards simplify the pipeline",
+            "Germany FUCHS",
+          ],
+          [
+            "Sensing aircraft enters, the water cannon system automatically turn on,Scan from",
+            "The motor of the pump is horizontal structure, easy maintenance",
+          ],
+          [
+            "Horizontal, vertical, tilted orientation Directions.",
+            "There are 50, 75, 100, 125, 150 and other calibers to meet the needs of",
+            "France schneider",
+          ],
+          [
+            "The central controller issues instructions,Then pumps started ,valve opened",
+            "different flow rates and lifts",
+          ],
+          [
+            "The high pressure water cannon ejaculates the target aircraft",
+            "After cleaning completed, the central controller will send instructions to stop ejatulating.",
+            "Taiwan Delta",
+          ],
+          [
+            "A.Aircraft enters cleaning area B.Device self-sense to start A.Mix the cleaning detergent B.Spray the cleaning detergent",
+            "A.High -pressure water cannon Cleaning B.High -pressure water Cleaning",
+            "Cleaning Procedures",
+          ],
+          [
+            "Sensing aircraft enters, the water cannon system automatically turn on,Scan from",
+            "Drive away from the cleaning area, the cleaning is over",
           ],
         ]}
       />

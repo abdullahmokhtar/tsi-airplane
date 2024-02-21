@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Header({ home, contact, branches }) {
   return (
     <header>
-      <nav className="navbar p-0 fixed-top navbar-expand-lg bg-warning">
+      <nav className="navbar p-0 fixed-top navbar-expand-lg nav-color">
         <div className="container">
           <Link className="navbar-brand">
             <img src={Logo} className="logo" alt="logo" />

@@ -141,7 +141,7 @@ a:hover .fa-location-dot {
 
 .icon-holder {
   margin: auto;
-  background-color: #FFFC9B;
+  background-color: #fffc9b;
   color: #ffa447 !important;
   border-radius: 50%;
   width: 100px;
@@ -150,6 +150,10 @@ a:hover .fa-location-dot {
   justify-content: center;
   align-items: center;
   color: rgb(37, 32, 32);
+}
+
+.nav-color {
+  background-color: #e8c872;
 }
 
 #contact .icon-holder {
