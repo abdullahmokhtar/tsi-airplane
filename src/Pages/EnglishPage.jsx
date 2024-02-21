@@ -3,6 +3,8 @@ import Header from "../Components/Header/Header";
 import Slider from "../Components/Slider";
 import Branches from "../Components/Branches";
 import Footer from "../Components/Footer";
+import Benfits from "../Components/Benfits";
+import TechData from "../Components/TechData";
 
 const EnglishPage = () => {
   return (
@@ -13,6 +15,18 @@ const EnglishPage = () => {
         text2="Aircraft Wash Equipment"
         text3="Airplane Wash Equipment"
       />
+      <Benfits
+        secTitle="Features & Benfits"
+        benfitsList={[
+          "More clean for the Aircraft",
+          "Save times and Power only 30 min",
+          "Aircraft rust prevention",
+          "Friendly and maintain proof",
+          "Easy to use, operate and maintain",
+          "New Idea Project",
+        ]}
+      />
+      <TechData />
       <Branches
         secTitle="Our Branches"
         countryNames={[

@@ -3,6 +3,7 @@ import Header from "../Components/Header/Header";
 import Slider from "../Components/Slider";
 import Branches from "../Components/Branches";
 import Footer from "../Components/Footer";
+import Benfits from "../Components/Benfits";
 
 const GermanyPage = () => {
   return (
@@ -13,6 +14,15 @@ const GermanyPage = () => {
         text2="Flugzeugwaschanlagen"
         text3="Flugzeugwaschausrüstung"
       />
+      <Benfits secTitle="Funktionen und Vorteile"
+         benfitsList={[
+           "Mehr Sauberkeit für das Flugzeug",
+           "Sparen Sie Zeit und Strom nur 30 Minuten",
+           "Flugzeug-Rostschutz",
+           "Freundlich sein und den Beweis wahren",
+           "Einfach zu bedienen, zu bedienen und zu warten",
+           "Neues Ideenprojekt",
+         ]} />
       <Branches
         secTitle="Unsere Filialen"
         countryNames={[

@@ -109,7 +109,6 @@ textarea {
   bottom: 5%;
 }
 
-
 a:hover .fa-phone {
   animation: ring 0.2s infinite;
 }
@@ -136,3 +135,28 @@ a:hover .fa-location-dot {
   }
 }
 
+#benfits .card {
+  border: none;
+}
+
+.icon-holder {
+  margin: auto;
+  background-color: #FFFC9B;
+  color: #ffa447 !important;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(37, 32, 32);
+}
+
+#contact .icon-holder {
+  width: 70px;
+  height: 70px;
+}
+
+.contact-text h4 {
+  font-size: 1.125rem;
+}

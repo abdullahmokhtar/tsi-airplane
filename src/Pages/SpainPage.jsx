@@ -3,6 +3,7 @@ import Header from "../Components/Header/Header";
 import Slider from "../Components/Slider";
 import Branches from "../Components/Branches";
 import Footer from "../Components/Footer";
+import Benfits from "../Components/Benfits";
 
 const SpainPage = () => {
   return (
@@ -16,6 +17,17 @@ const SpainPage = () => {
         text1="Tiba Internacional Suiza"
         text2="Equipo de lavado de aeronaves"
         text3="Equipo de lavado de aviones"
+      />
+      <Benfits
+        secTitle="Características y ventajas"
+        benfitsList={[
+          "Más limpio para los aviones",
+          "Ahorra tiempos y Energía sólo 30 min",
+          "Prevención de la oxidación de las aeronaves",
+          "Amistoso y mantener la prueba",
+          "Fácil de usar, operar y mantener",
+          "Proyecto de nueva idea",
+        ]}
       />
       <Branches
         secTitle="Nuestras tiendas"
