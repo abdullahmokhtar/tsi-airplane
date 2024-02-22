@@ -1,10 +1,9 @@
 import React from "react";
 import img1 from "../assets/imgs/airplane01.jpg";
 import img2 from "../assets/imgs/airplane02.jfif";
-import img3 from "../assets/imgs/airplane03.jpg";
 import img4 from "../assets/imgs/airplane04.jpeg";
-import img5 from "../assets/imgs/airplane05.webp";
-import img6 from "../assets/imgs/airplane06.jpg";
+import img5 from "../assets/imgs/airplane05.jpeg";
+import img6 from "../assets/imgs/airplane06.jpeg";
 import video1 from "../assets/videos/washing1.mp4";
 
 const Slider = ({ text1, text2, text3 }) => {
@@ -76,14 +75,11 @@ const Slider = ({ text1, text2, text3 }) => {
           <div className="carousel-item">
             <video
               src={video1}
-              // className="w-100"
               loop="true"
               autoPlay
-              // controls
               muted
               type="video/mp4"
             ></video>
-            {/* <img src={img3} className="w-100" alt="home wash" /> */}
           </div>
           <div className="carousel-item">
             <img src={img4} className="w-100" alt="..." />
