@@ -5,6 +5,7 @@ import Branches from "../Components/Branches";
 import Footer from "../Components/Footer";
 import Benfits from "../Components/Benfits";
 import TechData from "../Components/TechData";
+import Price from "../Components/Price";
 
 const GermanyPage = () => {
   return (
@@ -83,6 +84,7 @@ const GermanyPage = () => {
           ],
         ]}
       />
+      <Price price="Preis" />
       <Branches
         secTitle="Unsere Filialen"
         countryNames={[

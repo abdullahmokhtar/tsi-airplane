@@ -13,7 +13,7 @@ const Branches = ({ secTitle, countryNames, address, message }) => {
     <section id="branches" className="my-4">
       <div className="container">
         <h2 className="sec-title">{secTitle}</h2>
-        <div className="row gy-2 my-2">
+        <div className="row justify-content-center gy-2 my-2">
           <BranchItem
             img={switzerland}
             countryName={countryNames[0]}
@@ -53,13 +53,11 @@ const Branches = ({ secTitle, countryNames, address, message }) => {
             countryName={countryNames[5]}
             commingSoon={message}
           />
-          <div className="d-flex flex-column align-items-center">
-            <BranchItem
-              img={Brazil}
-              countryName={countryNames[6]}
-              commingSoon={message}
-            />
-          </div>
+          <BranchItem
+            img={Brazil}
+            countryName={countryNames[6]}
+            commingSoon={message}
+          />
         </div>
       </div>
     </section>

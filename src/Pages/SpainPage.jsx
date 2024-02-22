@@ -5,6 +5,7 @@ import Branches from "../Components/Branches";
 import Footer from "../Components/Footer";
 import Benfits from "../Components/Benfits";
 import TechData from "../Components/TechData";
+import Price from "../Components/Price";
 
 const SpainPage = () => {
   return (
@@ -87,6 +88,7 @@ const SpainPage = () => {
           ],
         ]}
       />
+      <Price price="Precio" />
       <Branches
         secTitle="Nuestras tiendas"
         countryNames={[

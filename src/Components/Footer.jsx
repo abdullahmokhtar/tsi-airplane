@@ -14,10 +14,10 @@ const Footer = ({
   placeholder1,
   placeholder2,
   placeholder3,
-  submit
+  submit,
 }) => {
   return (
-    <section id="contact" className="pt-4">
+    <section id="contact" className="pt-4 pb-3">
       <h2 className="sec-title">{secTitle}</h2>
       <div className="container">
         <div className="row mt-3">

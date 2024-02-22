@@ -141,7 +141,7 @@ a:hover .fa-location-dot {
 
 .icon-holder {
   margin: auto;
-  background-color: #fffc9b;
+  background-color: #323230;
   color: #ffa447 !important;
   border-radius: 50%;
   width: 100px;
@@ -163,4 +163,13 @@ a:hover .fa-location-dot {
 
 .contact-text h4 {
   font-size: 1.125rem;
+}
+
+video {
+  resize: both;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+
+  /* aspect-ratio: 5 / 3; */
 }
