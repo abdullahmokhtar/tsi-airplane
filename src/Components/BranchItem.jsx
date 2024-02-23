@@ -15,7 +15,7 @@ const BranchItem = ({
         <div className="card-body">
           <img src={img} alt={countryName} />
           <h4>{countryName}</h4>
-          <p>
+          <div>
             {addressLink != null ? (
               <a
                 className="fw-bold text-info"
@@ -31,8 +31,8 @@ const BranchItem = ({
                 {address != null ? address : ` ${commingSoon}`}
               </p>
             )}
-          </p>
-          <p className="d-xl-flex justify-content-around">
+          </div>
+          <div className="d-xl-flex justify-content-around">
             {phone1 != null ? (
               <a href={`tel:${phone1}`} className="d-block text-info">
                 <i className="fa-solid fa-phone"></i> {phone1}
@@ -47,7 +47,7 @@ const BranchItem = ({
                 <i className="fa-solid fa-phone"></i> {phone2}
               </a>
             )}
-          </p>
+          </div>
         </div>
       </div>
     </div>

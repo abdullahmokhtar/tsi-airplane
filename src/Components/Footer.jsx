@@ -56,14 +56,14 @@ const Footer = ({
               </div>
             </div>
           </div>
-          <div className="col-md-1">
-            <img src={qr} className="w-100 mt-5 pt-5" alt="qr" />
+          <div className="col-md-1 col-3 m-auto">
+            <img src={qr} className="w-100 my-3 py-3 " alt="qr" />
           </div>
           <div className="col-md-6">
             <form
               action="mailto:info@tibaswiss.ch"
               method="post"
-              enctype="text/plain"
+              encType="text/plain"
             >
               <h3>{title2}</h3>
               <div className="row">

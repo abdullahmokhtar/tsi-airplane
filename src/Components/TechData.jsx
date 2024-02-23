@@ -4,9 +4,9 @@ function TechData({ secTitle, tableData, tableHead }) {
   return (
     <section>
       <div className="container">
-        <h2 class="text-center mt-3">{secTitle}</h2>
-        <div class="table-responsive">
-          <table class="table table-striped shadow fs-5">
+        <h2 className="text-center mt-3">{secTitle}</h2>
+        <div className="table-responsive">
+          <table className="table table-striped shadow fs-5">
             <thead>
               <tr>
                 <th scope="col">{tableHead[0]}</th>

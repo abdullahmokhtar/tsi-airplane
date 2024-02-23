@@ -75,7 +75,7 @@ const Slider = ({ text1, text2, text3 }) => {
           <div className="carousel-item">
             <video
               src={video1}
-              loop="true"
+              loop={true}
               autoPlay
               muted
               type="video/mp4"

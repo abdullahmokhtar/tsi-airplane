@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import engFlag from "../../assets/imgs/eng.png";
 import germanFlag from "../../assets/imgs/germany.png";
 import franceFlag from "../../assets/imgs/fr.png";
@@ -7,6 +7,14 @@ import Logo from "../../assets/imgs/logo.png";
 import { Link } from "react-router-dom";
 
 function Header({ home, contact, branches }) {
+  let element;
+  let contactElement;
+  let homeElement;
+  useEffect(() => {
+    element = document.getElementById("branches");
+    contactElement = document.getElementById("contact");
+    homeElement = document.getElementById("home");
+  }, []);
   return (
     <header>
       <nav className="navbar p-0 fixed-top navbar-expand-lg nav-color">
@@ -28,23 +36,35 @@ function Header({ home, contact, branches }) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link
-                  className="nav-link active fw-bold fs-6"
+                <button
+                  className="nav-link fw-bold fs-6"
                   aria-current="page"
-                  href="#home"
+                  onClick={() =>
+                    homeElement?.scrollIntoView({ behavior: "smooth" })
+                  }
                 >
                   {home}
-                </Link>
+                </button>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fw-bold fs-6" href="#contact">
+                <button
+                  className="nav-link fw-bold fs-6"
+                  onClick={() =>
+                    contactElement?.scrollIntoView({ behavior: "smooth" })
+                  }
+                >
                   {contact}
-                </Link>
+                </button>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fw-bold fs-6" href="#branches">
+                <button
+                  className="nav-link fw-bold fs-6"
+                  onClick={() =>
+                    element?.scrollIntoView({ behavior: "smooth" })
+                  }
+                >
                   {branches}
-                </Link>
+                </button>
               </li>
             </ul>
             <Link to="/">

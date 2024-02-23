@@ -11,20 +11,20 @@ const icons = [
 function Benfits({ secTitle, benfitsList }) {
   return (
     <section id="benfits" className="py-3 my-4">
-      <div class="container">
-        <h2 class="sec-title">{secTitle}</h2>
+      <div className="container">
+        <h2 className="sec-title">{secTitle}</h2>
         <div className="row align-items-center">
           <div className="col-md-6">
-            <div class="row g-3 my-3">
+            <div className="row g-3 my-3">
               {benfitsList.map((benfit, index) => (
-                <div class="col-md-4">
-                  <div class="card text-center p-3">
-                    <div class="card-img">
-                      <div class="icon-holder">
-                        <i class={`fa-solid ${icons[index]} fa-2x`}></i>
+                <div className="col-md-4" key={index}>
+                  <div className="card text-center p-3">
+                    <div className="card-img">
+                      <div className="icon-holder">
+                        <i className={`fa-solid ${icons[index]} fa-2x`}></i>
                       </div>
                     </div>
-                    <div class="card-body">{benfit}</div>
+                    <div className="card-body">{benfit}</div>
                   </div>
                 </div>
               ))}
@@ -34,7 +34,7 @@ function Benfits({ secTitle, benfitsList }) {
             <div className="card">
               <video
                 src={video2}
-                loop="true"
+                loop={true}
                 autoPlay
                 muted
                 type="video/mp4"
