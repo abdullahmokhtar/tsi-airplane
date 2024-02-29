@@ -14,6 +14,7 @@ const FrancePage = () => {
         home="Maison"
         contact="À propos de nous"
         branches="Nos magasins"
+        partners="les partenaires"
       />
       <Slider
         text1="Tiba Suisse International"

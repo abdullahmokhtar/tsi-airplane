@@ -173,3 +173,7 @@ video {
 
   /* aspect-ratio: 5 / 3; */
 }
+
+.card-img img {
+  aspect-ratio: 4 / 1;
+}

@@ -6,7 +6,7 @@ function TechData({ secTitle, tableData, tableHead }) {
       <div className="container">
         <h2 className="text-center mt-3">{secTitle}</h2>
         <div className="table-responsive">
-          <table className="table table-striped shadow fs-5">
+          <table className="table table-striped table-hover shadow fs-5">
             <thead>
               <tr>
                 <th scope="col">{tableHead[0]}</th>

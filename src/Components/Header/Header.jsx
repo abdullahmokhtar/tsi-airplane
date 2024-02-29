@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from "react";
 import engFlag from "../../assets/imgs/eng.png";
 import germanFlag from "../../assets/imgs/germany.png";
@@ -6,14 +7,16 @@ import spainFlag from "../../assets/imgs/Spain_flag.png";
 import Logo from "../../assets/imgs/logo.png";
 import { Link } from "react-router-dom";
 
-function Header({ home, contact, branches }) {
+function Header({ home, contact, branches, partners }) {
   let element;
   let contactElement;
   let homeElement;
+  let partnerElement;
   useEffect(() => {
     element = document.getElementById("branches");
     contactElement = document.getElementById("contact");
     homeElement = document.getElementById("home");
+    partnerElement = document.getElementById("partners");
   }, []);
   return (
     <header>
@@ -64,6 +67,17 @@ function Header({ home, contact, branches }) {
                   }
                 >
                   {branches}
+                </button>
+              </li>
+              <li className="nav-item">
+                <button
+                  className="nav-link fw-bold fs-6"
+                  onClick={() => {
+                    console.log(partnerElement);
+                    partnerElement?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  {partners}
                 </button>
               </li>
             </ul>

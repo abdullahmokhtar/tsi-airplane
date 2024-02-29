@@ -32,7 +32,7 @@ const BranchItem = ({
               </p>
             )}
           </div>
-          <div className="d-xl-flex justify-content-around">
+          <div className="d-xl-flex justify-content-around mt-3">
             {phone1 != null ? (
               <a href={`tel:${phone1}`} className="d-block text-info">
                 <i className="fa-solid fa-phone"></i> {phone1}

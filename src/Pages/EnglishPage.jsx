@@ -6,11 +6,17 @@ import Footer from "../Components/Footer";
 import Benfits from "../Components/Benfits";
 import TechData from "../Components/TechData";
 import Price from "../Components/Price";
+import Partners from "../Components/Partners";
 
 const EnglishPage = () => {
   return (
     <>
-      <Header home="Home" contact="About Us" branches="Our Branches" />
+      <Header
+        home="Home"
+        contact="About Us"
+        branches="Our Branches"
+        partners="partners"
+      />
       <Slider
         text1="Tiba Swiss International"
         text2="Aircraft Wash Equipment"
@@ -99,6 +105,7 @@ const EnglishPage = () => {
         ]}
         message="Comming soon"
       />
+      <Partners secTitle="Our Partners" />
       <Footer
         secTitle="Contact us"
         title1="Get In Touch"
