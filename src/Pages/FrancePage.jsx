@@ -6,6 +6,7 @@ import Footer from "../Components/Footer";
 import Benfits from "../Components/Benfits";
 import TechData from "../Components/TechData";
 import Price from "../Components/Price";
+import Partners from "../Components/Partners";
 
 const FrancePage = () => {
   return (
@@ -109,6 +110,7 @@ const FrancePage = () => {
         ]}
         message="À venir"
       />
+      <Partners />
       <Footer
         secTitle="Contactez-nous"
         title1="Entrez en contact"
