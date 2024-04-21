@@ -16,7 +16,7 @@ function Benfits({ secTitle, benfitsList }) {
         <h2 className="sec-title">{secTitle}</h2>
         <div className="row align-items-center">
           <div className="col-md-12">
-            <div className="row g-3 my-3">
+            <div className="row g-3 my-3 mx-2">
               {benfitsList.map((benfit, index) => (
                 <div className="col-md-4" key={index}>
                   <div className="card text-center p-3">
@@ -34,7 +34,7 @@ function Benfits({ secTitle, benfitsList }) {
           <div className="col-md-6">
             <div className="card">
               <video
-                src={video2}
+                src={video1}
                 loop={true}
                 autoPlay
                 muted
@@ -46,7 +46,7 @@ function Benfits({ secTitle, benfitsList }) {
           <div className="col-md-6">
             <div className="card">
               <video
-                src={video1}
+                src={video2}
                 loop={true}
                 autoPlay
                 muted
