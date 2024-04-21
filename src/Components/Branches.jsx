@@ -19,23 +19,20 @@ const Branches = ({ secTitle, countryNames, address, message }) => {
             countryName={countryNames[0]}
             address={address[0]}
             addressLink="https://www.google.com/maps/search/Poststrasse+17A+2504+Biel+%D8%B3%D9%88%D9%8A%D8%B3%D8%B1%D8%A7%E2%80%AD/@47.146359,7.272272,15z?hl=ar&entry=ttu"
-            phone1="0041 32 554 60 95"
-            phone2="0041 76 343 59 38"
+            phone1="0041 76 343 59 38"
           />
           <BranchItem
             img={Egypt}
             countryName={countryNames[1]}
             address={address[1]}
-            phone1="+201017962909"
-            phone2="+201067656918"
+            phone1="+20106672527"
           />
           <BranchItem
             img={UAE}
             countryName={countryNames[2]}
             address={address[2]}
             addressLink="https://www.google.com/maps/@25.18534,55.261837,12z?hl=en&entry=ttu"
-            phone1="+0041 32 554 60 95"
-            phone2="+0041 76 343 59 38"
+            phone1="+971506555898"
           />
           <BranchItem
             img={KSA}

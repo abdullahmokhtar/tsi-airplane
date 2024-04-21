@@ -5,7 +5,6 @@ import Branches from "../Components/Branches";
 import Footer from "../Components/Footer";
 import Benfits from "../Components/Benfits";
 import TechData from "../Components/TechData";
-import Price from "../Components/Price";
 import Partners from "../Components/Partners";
 
 const FrancePage = () => {
@@ -90,7 +89,7 @@ const FrancePage = () => {
           ],
         ]}
       />
-      <Price price="Prix" />
+      {/* <Price price="Prix" /> */}
       <Branches
         secTitle="Nos magasins"
         countryNames={[
@@ -125,6 +124,7 @@ const FrancePage = () => {
         placeholder2="Sujet"
         placeholder3="Message"
         submit="Envoyer un message"
+        phone="Téléphone"
       />
     </>
   );

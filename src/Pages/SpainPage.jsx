@@ -89,7 +89,7 @@ const SpainPage = () => {
           ],
         ]}
       />
-      <Price price="Precio" />
+      {/* <Price price="Precio" /> */}
       <Branches
         secTitle="Nuestras tiendas"
         countryNames={[
@@ -125,6 +125,7 @@ const SpainPage = () => {
         placeholder2="Asunto"
         placeholder3="Mensaje"
         submit="Enviar mensaje"
+        phone="Teléfono"
       />
     </>
   );

@@ -5,7 +5,6 @@ import Branches from "../Components/Branches";
 import Footer from "../Components/Footer";
 import Benfits from "../Components/Benfits";
 import TechData from "../Components/TechData";
-import Price from "../Components/Price";
 import Partners from "../Components/Partners";
 
 const EnglishPage = () => {
@@ -23,7 +22,7 @@ const EnglishPage = () => {
         text3="Airplane Wash Equipment"
       />
       <Benfits
-        secTitle="Features & Benfits"
+        secTitle="Features & Benefits"
         benfitsList={[
           "More clean for the Aircraft",
           "Save times and Power only 30 min",
@@ -38,7 +37,7 @@ const EnglishPage = () => {
         tableHead={["No.", "Function Descriptions", "Brand Details", "Remarks"]}
         tableData={[
           [
-            "The aircraft cleaning equipment mainly uses long-distance highpressure water cannons and shortdistance high-pressure water systems",
+            "The aircraft cleaning equipment mainly uses long-distance high pressure water cannons and short distance high-pressure water systems",
             " High -pressure water pump The rotor part of the pump is supported consistently by Rolling bearing at both ends",
             "Germany pinfl",
           ],
@@ -85,7 +84,7 @@ const EnglishPage = () => {
           ],
         ]}
       />
-      <Price price="Price" />
+      {/* <Price price="Price" /> */}
       <Branches
         secTitle="Our Branches"
         countryNames={[
@@ -100,10 +99,10 @@ const EnglishPage = () => {
         address={[
           "Tiba swiss GmBH Poststrasse17, 2504 Biel. Switzerland",
           "Tiba swiss GmBH Egypt, Sharkia, Kafr Saqr, Al-Nasr neighborhood",
-          "Tiba swiss GmBH, Dubai business bay, park Line toweroffice 2108 Dubai.",
+          "Tiba swiss GmBH, Dubai business bay, park Line tower office 2108 Dubai.",
           " Saudi Arabia, Riad City",
         ]}
-        message="Comming soon"
+        message="Coming soon"
       />
       <Partners secTitle="Our Partners" />
       <Footer

@@ -24,7 +24,7 @@ const GermanyPage = () => {
           "Sparen Sie Zeit und Strom nur 30 Minuten",
           "Flugzeug-Rostschutz",
           "Freundlich sein und den Beweis wahren",
-          "Einfach zu bedienen, zu bedienen und zu warten",
+          "Einfach zu bedienen und zu warten",
           "Neues Ideenprojekt",
         ]}
       />
@@ -85,7 +85,7 @@ const GermanyPage = () => {
           ],
         ]}
       />
-      <Price price="Preis" />
+      {/* <Price price="Preis" /> */}
       <Branches
         secTitle="Unsere Filialen"
         countryNames={[
@@ -120,6 +120,7 @@ const GermanyPage = () => {
         placeholder2="Betreff"
         placeholder3="Nachricht"
         submit="Nachricht senden"
+        phone="Telefon"
       />
     </>
   );

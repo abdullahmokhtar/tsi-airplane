@@ -15,6 +15,7 @@ const Footer = ({
   placeholder2,
   placeholder3,
   submit,
+  phone,
 }) => {
   return (
     <section id="contact" className="pt-4 pb-3">
@@ -51,6 +52,17 @@ const Footer = ({
                   <h4 className="mb-1">{mail ? mail : "E-mail"}</h4>
                   <p>
                     <a href="mailto:info@tibaswiss.ch">info@tibaswiss.ch</a>
+                  </p>
+                </div>
+              </div>
+              <div className="d-flex align-items-center mb-3">
+                <div className="icon-holder ms-3 me-4">
+                  <i className="fa-solid fa-phone fa-2x"></i>
+                </div>
+                <div className="contact-text">
+                  <h4 className="mb-1">{phone ? phone : "Phone"}</h4>
+                  <p>
+                    <a href="tel:0041763435938">0041763435938</a>
                   </p>
                 </div>
               </div>
